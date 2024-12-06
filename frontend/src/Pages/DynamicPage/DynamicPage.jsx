@@ -2,12 +2,20 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import DynamicRender from "../DynamicRender/DynamicRender";
 import PagesData from "../../PagesData/Pages.json";
+import useGetData from "../../Hooks/useGetData";
 
 function DynamicPage() {
   const { urlName } = useParams();
   const navigate = useNavigate();
   const [data, setData] = useState(PagesData);
 
+
+
+  // useEffect(()=>{
+  //   const { data, loading, error } = useGetData(urlName)
+  // },[urlName])
+
+  
   useEffect(() => {
     if (data && !data[urlName]) {
       navigate("/notFound"); // Redirect to your custom "notFound" page
