@@ -2,16 +2,22 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import DynamicRender from "../DynamicRender/DynamicRender";
 import PagesData from "../../PagesData/Pages.json";
+import useGetData from "../../Hooks/useGetData";
 
 function DynamicPage() {
   const { urlName } = useParams();
   const navigate = useNavigate();
-  const [data, setData] = useState(PagesData);
+  // const [data, setData] = useState(PagesData);
 
 
 
 
-  useEffect(()=>{},[page])
+  useEffect(()=>{
+
+    const { data, loading, error } = useGetData(urlName)
+    console.log(data);
+    
+  },[urlName])
 
 
 
