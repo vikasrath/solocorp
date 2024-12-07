@@ -60,10 +60,6 @@ const navLinks = [
                 link: "/tradeLicense"
             },
             {
-                title: "FSSAI Registration",
-                link: "/FSSAIRegistration"
-            },
-            {
                 title: "FSSAI License",
                 link: "/FSSAILicense"
             },
@@ -100,70 +96,7 @@ const navLinks = [
                 title: "Professional Tax Registration",
                 link: "/professionalTaxRegistration"
             },
-            {
-                title: "RCMC Registration",
-                link: "/RCMCRegistration"
-            },
-            {
-                title: "TN RERA Registration For Agents",
-                link: "/TNRERARegistrationForAgents"
-            },
-            {
-                title: "12A And 80G Registration",
-                link: "/12AAnd80GRegistration"
-            },
-            {
-                title: "12A Registration",
-                link: "/12ARegistration"
-            },
-            {
-                title: "80G Registration",
-                link: "/80GRegistration"
-            },
-            {
-                title: "APEDA Registration",
-                link: "/APEDARegistration"
-            },
-            {
-                title: "Barcode Registration",
-                link: "/barcodeRegistration"
-            },
-            {
-                title: "BIS Registration",
-                link: "/BISRegistration"
-            },
-            {
-                title: "Certificate Of Incumbency",
-                link: "/certificateOfIncumbency"
-            },
-            {
-                title: "Darpan Registration",
-                link: "/darpanRegistration"
-            },
-            {
-                title: "Digital Signature",
-                link: "/digitalSignature"
-            },
-            {
-                title: "Digital Signature-DGFT Version",
-                link: "/digitalSignatureDGFT"
-            },
-            {
-                title: "Drug License",
-                link: "/drugLicense"
-            },
-            {
-                title: "Udyam Registration",
-                link: "/udyamRegistration"
-            },
-            {
-                title: "FCRA Registration",
-                link: "/FCRARegistration"
-            },
-            {
-                title: "Fire License",
-                link: "/fireLicense"
-            }
+            
         ]
     },
     {
@@ -200,52 +133,8 @@ const navLinks = [
             {
                 title: "TM Infringement Notice",
                 link: "/TMInfringementNotice"
-            },
-            {
-                title: "Trademark Renewal",
-                link: "/trademarkRenewal"
-            },
-            {
-                title: "Trademark Transfer",
-                link: "/trademarkTransfer"
-            },
-            {
-                title: "expedited TM Registration",
-                link: "/expeditedTMRegistration"
-                
-            },
-            {
-                title: "USA Trademark Registration",
-                link: "/USATrademarkRegistration"
-            },
-            {
-                title: "International Trademark",
-                link: "/internationalTrademark"
-            },
-            {
-                title: "Logo Designing",
-                link: "/logoDesigning"
-            },
-            {
-                title: "Design Registration",
-                link: "/designRegistration"
-            },
-            {
-                title: "Design Objection",
-                link: "/designObjection"
-            },
-            {
-                title: "Copyright Registration",
-                link: "/copyrightRegistration"
-            },
-            {
-                title: "Copyright Objection",
-                link: "/copyrightObjection"
-            },
-            {
-                title: "Patent Registration",
-                link: "/patentRegistration"
             }
+            
         ]
     },
     {
@@ -279,27 +168,7 @@ const navLinks = [
                 title: "GST Registration For NRI",
                 link: "/GSTRegistrationForNRI"
             },
-            {
-                title: "GST Return Filing By Accountant",
-                link: "/GSTReturnFilingByAccountant"
-            },
-            {
-                title: "GST Revocation",
-                link: "/GSTRevocation"
-            },
-            {
-                title: "Invoicing & GST Software",
-                link: "/invoicingAndGSTSoftware"
-            },
-            {
-                title: "GSTR-10",
-                link: "/GSTR10"
-                
-            },
-            {
-                title: "GST Software For Accountants",
-                link: "/GSTSoftwareForAccountants"
-            }
+           
         ]
     },
     {
@@ -337,26 +206,7 @@ const navLinks = [
                 title: "ITR-6 Return Filing",
                 link: "/ITR6ReturnFiling"
             },
-            {
-                title: "ITR-7 Return Filing",
-                link: "/ITR7ReturnFiling"
-            },
-            {
-                title: "15CA-15CB Filing",
-                link: "/15CATo15CBFiling"
-            },
-            {
-                title: "TAN Registration",
-                link: "/TANRegistration"
-            },
-            {
-                title: "TDS Return Filing",
-                link: "/TDSReturnFiling"
-            },
-            {
-                title: "Income Tax Notice",
-                link: "/incomeTaxNotice"
-            },
+            
         ]
     },
     {
@@ -394,55 +244,7 @@ const navLinks = [
                 title: "Director Change",
                 link: "/ldirectorChange"
             },
-            {
-                title: "Remove Director",
-                link: "/removeDirector"
-            },
-            {
-                title: "ADT-1 Filing",
-                link: "/ADT1Filing"
-            },
-            {
-                title: "DPT-3 Filing",
-                link: "/DPT3Filing"
-                
-            },
-            {
-                title: "LLP Form 11 Filing",
-                link: "/LLPForm11Filing"
-            },
-            {
-                title: "Dormant Status Filing",
-                link: "/dormantStatusFiling"
-            },
-            {
-                title: "MOA Amendment",
-                link: "/MOAAmendment"
-            },
-            {
-                title: "AOA Amendment",
-                link: "/AOAAmendment"
-            },
-            {
-                title: "Authorised Capital Increase",
-                link: "/authorisedCapitalIncrease"
-            },
-            {
-                title: "Share Transfer",
-                link: "/shareTransfer"
-            },
-            {
-                title: "Demat Of Shares",
-                link: "/dematOfShares"
-            },
-            {
-                title: "Winding Up-LLP",
-                link: "/windingUpLLP"
-            },
-            {
-                title: "Winding Up-Company",
-                link: "/windingUpCompany"
-            }
+
         ]
     },
     {
@@ -471,32 +273,8 @@ const navLinks = [
             {
                 title: "HR & Payroll",
                 link: "/HRAndPayroll"
-            },
-            {
-                title: "PF Return Filing",
-                link: "/PFReturnFiling"
-            },
-            {
-                title: "ESI Return Filing",
-                link: "/ESIReturnFiling"
-            },
-            {
-                title: "Prfessional Tax Return Filing",
-                link: "/prfessionalTaxReturnFiling"
-            },
-            {
-                title: "Partnership Compliances",
-                link: "/partnershipCompliances"
-            },
-            {
-                title: "Proprietorship Compliances",
-                link: "/proprietorshipCompliances"
-                
-            },
-            {
-                title: "Book Keeping",
-                link: "/bookKeeping"
             }
+            
         ]
     },
 ]

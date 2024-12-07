@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import DynamicRender from "../DynamicRender/DynamicRender";
 import PagesData from "../../PagesData/Pages.json";
-import useGetData from "../../Hooks/useGetData";
 
 function DynamicPage() {
   const { urlName } = useParams();
@@ -11,31 +10,32 @@ function DynamicPage() {
 
 
 
-  // useEffect(()=>{
-  //   const { data, loading, error } = useGetData(urlName)
-  // },[urlName])
+
+  useEffect(()=>{},[page])
+
+
+
+
+
+  // useEffect(() => {
+  //   if (data && !data[urlName]) {
+  //     navigate("/notFound"); // Redirect to your custom "notFound" page
+  //   }
+  // }, [data, urlName, navigate]);
+
+  // const urlPageData = data ? data[urlName] : null;
+
+  // useEffect(() => {
+  //   if (urlPageData) {
+  //     document.title = `${urlPageData.title} | Solocorp`; // Dynamically set the page title
+  //   }
+  // }, [urlPageData]);
+
+  // if (!urlPageData) {
+  //   return null; // No need to render anything if the user is redirected
+  // }
 
   
-  useEffect(() => {
-    if (data && !data[urlName]) {
-      navigate("/notFound"); // Redirect to your custom "notFound" page
-    }
-  }, [data, urlName, navigate]);
-
-  const urlPageData = data ? data[urlName] : null;
-
-  useEffect(() => {
-    if (urlPageData) {
-      document.title = `${urlPageData.title} | Solocorp`; // Dynamically set the page title
-    }
-  }, [urlPageData]);
-
-  if (!urlPageData) {
-    return null; // No need to render anything if the user is redirected
-  }
-
-  const pageTitle = urlPageData.title;
-  const pageSections = urlPageData.sections;
 
   return (
     <div className="bg-gray-50 text-gray-800">

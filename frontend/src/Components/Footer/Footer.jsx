@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaAngleRight, FaChevronUp } from "react-icons/fa";
 import Sidebar from "../Navbar/Sidebar/Sidebar";
+import Logo from "../Logo/Logo";
 
 const FooterSection = ({ title, items }) => (
   <div>
@@ -51,11 +52,7 @@ const Footer = () => {
         {/* Logo Section */}
         <div className="flex flex-col items-center justify-between md:flex-row mb-8">
           <div className="flex items-center space-x-4">
-            <img
-              src="/path-to-your-logo.png"
-              alt="Nandaguri Verifocus Legal LLP Logo"
-              className="h-16 transition-transform duration-300 transform hover:scale-110"
-            />
+           <Logo/>
             <div>
               <p className="text-lg font-semibold hover:text-gray-300 transition-colors duration-300 cursor-pointer">
                 Nandaguri Verifocus Legal LLP
@@ -90,10 +87,13 @@ const Footer = () => {
 
                 </p>
                 <p className="text-sm mb-2 text-gray-400 hover:text-gray-300 transition-colors duration-300">
-                  <i className="fas fa-phone-alt mr-2"></i> 9081400093
+                  <i className="fas fa-phone-alt mr-2"></i>  +918923777757
+                </p>
+                <p className="text-sm mb-2 text-gray-400 hover:text-gray-300 transition-colors duration-300">
+                  <i className="fas fa-phone-alt mr-2"></i>  +917999600059
                 </p>
                 <p className="text-sm text-gray-400 hover:text-gray-300 transition-colors duration-300">
-                  <i className="fas fa-envelope mr-2"></i> Jindal.pawan63@gmail.com 
+                  <i className="fas fa-envelope mr-2"></i> nandagurivflegal@gmail.com
                 </p>
               </>
             }

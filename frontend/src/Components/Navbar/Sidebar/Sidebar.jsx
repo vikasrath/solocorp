@@ -20,17 +20,17 @@ function Sidebar({ togled, setTogled }) {
 
     return (
         <div 
-            className={`fixed top-0 left-0 h-full w-full bg-white z-20 shadow-lg transition-transform duration-1000 ease-in-out ${togled ? "translate-x-0" : "-translate-x-full"}`}
+            className={`fixed top-0 left-0 h-full w-[70%] bg-white z-20 shadow-lg transition-transform duration-1000 ease-in-out ${togled ? "translate-x-0" : "-translate-x-full"}`}
             style={{ willChange: 'transform' }}
         >
-            <div className='flex justify-between items-center px-5 md:px-10 py-5 border-b'>
+            <div className='flex justify-between items-center px-5 md:px-10 py-4 border-b'>
                 <Logo />
                 <button onClick={handleToggle} className="text-black">
                     <i className='fa-solid fa-x w-5 h-5 text-black' style={{ fontSize: '1.5rem' }}></i>
                 </button>
             </div>
             <div className='flex h-full'>
-                <div className='flex flex-col bg-white text-black p-5 w-full md:w-[45%] lg:w-[25%]'>
+                <div className='flex flex-col bg-white text-black p-5 w-full md:w-[45%] lg:w-[35%]'>
                     <div className='max-h-[85%] overflow-y-auto custom-scrollbar scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100'>
                         {navLinks.map((navLink, index) => (
                             <div
@@ -38,7 +38,7 @@ function Sidebar({ togled, setTogled }) {
                                     ${select === navLink.title
                                         ? "border-l-4 border-blue-600 bg-blue-50 shadow-lg"
                                         : "border-l-2 border-transparent bg-gray-50"}
-                                hover:bg-blue-100 hover:text-blue-600 hover:border-blue-600 hover:shadow-md`}
+                                hover:bg-blue-100 hover:text-blue-600 md:text-lg hover:border-blue-600 hover:shadow-md`}
                                 onClick={() => handleSelect(navLink)}
                                 key={index}
                             >
