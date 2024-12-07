@@ -9,14 +9,12 @@ function App() {
     <>
       <Routes>
 
-      <Route element={<Layout/>}>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/:urlName" element={<DynamicPage />} />
-      </Route>
-
-      
-      {/* <Route path="/notFound" element={<NotFoundPage />} />
-      <Route path="*" element={<Navigate to="/notFound" />} /> */}
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/:urlName" element={<DynamicPage />} />
+        </Route>
+        <Route path="/notFound" element={<NotFoundPage />} />
+        <Route path="*" element={<Navigate to="/notFound" />} />
 
 
       </Routes>

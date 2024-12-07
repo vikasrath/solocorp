@@ -2,25 +2,25 @@ import React, { useState, useEffect } from 'react';
 import BG from "../../assets/heroBG.jpeg";
 import Navbar from '../Navbar/Navbar';
 import { useParams } from 'react-router-dom';
-import Pages from "../../PagesData/Pages.json"
 import images from '../../indexImages/indexImages';
+import { usePageData } from '../../context/pageData';
 
 function Herosection() {
     const [heroImg, setHeroImg] = useState(null);
     const [heroContent, setHeroContent] = useState(null);
-    const [data, setData] = useState(Pages);
+    const {pageData } = usePageData()
+    
 
     const { urlName } = useParams();
 
     useEffect(() => {
         if (urlName) {
-            const urlPageData = data[urlName];
-            if (urlPageData) {
+            if (pageData) {
                 setHeroImg(images[urlName]);
-                setHeroContent(urlPageData.heroContent);
+                setHeroContent(pageData.heroContent)
             }
         }
-    }, [urlName]);
+    }, [urlName, pageData]);
 
     return (
         <div className="w-full">
