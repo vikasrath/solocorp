@@ -14,7 +14,7 @@ function Selected({ select, datas, setTogled, setSelect }) {
 
   return (
     <div
-      className={`transition-transform duration-1000 ease-in-out ${select ? "translate-x-0" : "-translate-x-[200%]"} absolute z-20 h-screen w-screen top-0 md:top-auto right-0 md:w-[55%] lg:w-[75%] bg-white bg-opacity-30 backdrop-blur-md transition-all duration-700 ease-in-out`}
+      className={`transition-transform duration-1000 ease-in-out ${select ? "translate-x-0" : "-translate-x-[200%]"} absolute z-20 h-screen w-screen top-0 md:top-auto right-0 md:w-[55%] lg:w-[67%] bg-white bg-opacity-30 backdrop-blur-md transition-all duration-700 ease-in-out`}
       style={{ borderRadius: '10px' }}
     >
       <div className='md:hidden flex justify-between m-5'>
