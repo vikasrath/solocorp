@@ -8,10 +8,10 @@ export const page = async (req, res) => {
         const result = await Page.findOne({ name: page });
 
         if (!result) {
-            return res.status(404).json({ message: "Page not found" }); // If no page is found
+            return res.status(200).json({ message: "Page not found" }); // If no page is found
         }
 
-        res.status(200).json(result); // Send the retrieved page data
+        res.status(200).json(result.data); // Send the retrieved page data
     } catch (error) {
         // Handle any potential errors
         console.error(error);

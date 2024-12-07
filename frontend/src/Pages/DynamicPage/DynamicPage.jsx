@@ -2,32 +2,22 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import DynamicRender from "../DynamicRender/DynamicRender";
 import useGetData from "../../Hooks/useGetData";
-import Pages from '../../PagesData/Pages.json';
 
 function DynamicPage() {
   const { urlName } = useParams();
   const [pageSections, setPageSections] = useState(null);
   const [pageTitle, setPageTitle] = useState(null);
 
-
-  const { data, loading, error } = useGetData(urlName);
+  const { data, loading } = useGetData(urlName);
+  
 
   useEffect(() => {
     if (data) {
-     
-      setPageSections(data?.data?.sections);
-      setPageTitle(data?.data?.title);
-    } else {
-      const pageData = Pages[urlName];
-      if (pageData) {
-        console.log(pageData);
-        
-        setPageSections(pageData.sections);
-        setPageTitle(pageData.title);
-      } 
+      
+      setPageSections(data.sections);
+      setPageTitle(data.title);
     }
-  }, [urlName]); 
-
+  }, [data, urlName]);
 
   if (loading) {
     return <div>Loading...</div>;

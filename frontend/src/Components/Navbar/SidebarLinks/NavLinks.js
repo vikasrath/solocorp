@@ -242,7 +242,7 @@ const navLinks = [
             },
             {
                 title: "Director Change",
-                link: "/ldirectorChange"
+                link: "/DirectorChange"
             },
 
         ]

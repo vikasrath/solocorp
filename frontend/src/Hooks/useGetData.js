@@ -1,33 +1,34 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Pages from "../PagesData/Pages.json"
 
-const useGetData = (pageName) => {
+const useFetchPage = (page) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchPageData = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`api/data/${pageName}`);
-        setData(response.data);
-        if(response.status === 400){
-          return
+        const response = await axios.get(`/api/data/${page}`);        
+        
+        if (response.status == 200 && !response.data.message) {
+          setData(response.data);
         }
       } catch (err) {
-        setError(err);
+        console.log(err);
+        
       } finally {
         setLoading(false);
       }
     };
 
-    if (pageName) {
-      fetchData();
+    if (page) {
+      fetchPageData();
     }
-  }, [pageName]);
+  }, [page]);
 
-  return { data, loading, error };
+  return { data, loading };
 };
 
-export default useGetData;
+export default useFetchPage;
