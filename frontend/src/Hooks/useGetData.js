@@ -12,6 +12,9 @@ const useGetData = (pageName) => {
         setLoading(true);
         const response = await axios.get(`api/data/${pageName}`);
         setData(response.data);
+        if(response.status === 400){
+          return
+        }
       } catch (err) {
         setError(err);
       } finally {

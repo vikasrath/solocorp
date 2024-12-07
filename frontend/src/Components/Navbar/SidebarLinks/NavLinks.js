@@ -267,8 +267,8 @@ const navLinks = [
                 link: "/FSSAIReturnFiling"
             },
             {
-                title: "IE Code Modification",
-                link: "/IECodeModification"
+                title: "Business Plan",
+                link: "/businessPlan"
             },
             {
                 title: "HR & Payroll",

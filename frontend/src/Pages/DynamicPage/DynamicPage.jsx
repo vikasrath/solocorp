@@ -1,30 +1,36 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import DynamicRender from "../DynamicRender/DynamicRender";
 import useGetData from "../../Hooks/useGetData";
+import Pages from '../../PagesData/Pages.json';
 
 function DynamicPage() {
   const { urlName } = useParams();
-  const navigate = useNavigate();
-  const [pageSections, setPageSections] = useState(null); 
-  const [pageTitle, setPageTitle] = useState(null); 
+  const [pageSections, setPageSections] = useState(null);
+  const [pageTitle, setPageTitle] = useState(null);
+
 
   const { data, loading, error } = useGetData(urlName);
 
   useEffect(() => {
     if (data) {
-      console.log(data?.data?.sections); 
+     
       setPageSections(data?.data?.sections);
       setPageTitle(data?.data?.title);
+    } else {
+      const pageData = Pages[urlName];
+      if (pageData) {
+        console.log(pageData);
+        
+        setPageSections(pageData.sections);
+        setPageTitle(pageData.title);
+      } 
     }
-  }, [data]);
+  }, [urlName]); 
+
 
   if (loading) {
     return <div>Loading...</div>;
-  }
-
-  if (error) {
-    return <div>Error loading page data</div>;
   }
 
   if (!pageSections) {
