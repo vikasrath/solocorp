@@ -12,32 +12,32 @@ function Services() {
   const serviceDetail = [
     {
       title: "Incorporation",
-      description: "At Solocorp, we streamline company incorporation with expert guidance and simplified documentation, helping businesses launch quickly and focus on growth.",
+      description: "At Nandaguri Verifocus legal LLP, we streamline company incorporation with expert guidance and simplified documentation, helping businesses launch quickly and focus on growth.",
       logo: incorporation
     },
     {
       title: "Trademark",
-      description: "At Solocorp, we provide comprehensive trademark services to safeguard your brand, from registration to legal enforcement, ensuring ease and security.",
+      description: "At Nandaguri Verifocus legal LLP, we provide comprehensive trademark services to safeguard your brand, from registration to legal enforcement, ensuring ease and security.",
       logo: trademark
     },
     {
       title: "Accounting",
-      description: "At Solocorp, we simplify accounting by offering expert solutions in tax filing, GST compliance, and financial management, ensuring accuracy and efficiency.",
+      description: "At Nandaguri Verifocus legal LLP, we simplify accounting by offering expert solutions in tax filing, GST compliance, and financial management, ensuring accuracy and efficiency.",
       logo: finance
     },
     {
       title: "Income Tax",
-      description: "At Solocorp, we offer expert solutions for income tax issues, ensuring compliance and maximizing deductions to optimize financial outcomes.",
+      description: "At Nandaguri Verifocus legal LLP, we offer expert solutions for income tax issues, ensuring compliance and maximizing deductions to optimize financial outcomes.",
       logo: tax
     },
     {
       title: "GST Services",
-      description: "At Solocorp, we simplify GST compliance with tailored solutions for accurate filings, timely submissions, and strategic advice to navigate regulations effortlessly.",
+      description: "At Nandaguri Verifocus legal LLP, we simplify GST compliance with tailored solutions for accurate filings, timely submissions, and strategic advice to navigate regulations effortlessly.",
       logo: gst
     },
     {
       title: "Payroll",
-      description: "At Solocorp, we streamline payroll processes, ensuring accurate calculations, timely disbursements, and compliance with regulations, so you can focus on growing your business.",
+      description: "At Nandaguri Verifocus legal LLP, we streamline payroll processes, ensuring accurate calculations, timely disbursements, and compliance with regulations, so you can focus on growing your business.",
       logo: payroll
     }
   ];

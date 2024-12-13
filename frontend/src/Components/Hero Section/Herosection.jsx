@@ -35,9 +35,9 @@ function Herosection() {
             >
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-70 z-0"></div>
 
-                <div className="home-banner-height flex items-center justify-center text-white flex-col p-8 sm:p-6 text-custom relative z-10 fade-in sm:pt-12 md:pt-16 lg:pt-24">
+                <div className="home-banner-height flex items-center justify-center text-white flex-col p-8 text-custom relative z-10 fade-in pt-28 md:pt-16 lg:pt-24">
                     {/* Dynamic Title */}
-                    <h2 className="font-extrabold mb-4 text-3xl md:text-4xl lg:text-5xl text-center leading-snug sm:leading-tight">
+                    <h2 className="font-extrabold mb-4 text-xl sm:text-4xl lg:text-5xl text-center leading-snug sm:leading-tight">
                         {heroContent?.title || "Effortless Tax Filing & Financial Services"}
                     </h2>
 
@@ -52,7 +52,7 @@ function Herosection() {
                             </h2>
                         )) : 
                         <h2
-                                className="font-semibold md:text-lg lg:text-xl text-center max-w-md md:max-w-2xl mx-auto mb-6"
+                                className="font-semibold text-sm sm:text-lg lg:text-xl text-center max-w-md md:max-w-2xl mx-auto mb-6"
                             >
                                 { "Simplify your tax filing, GST, and compliance with our expert solutions"}
                             </h2>}

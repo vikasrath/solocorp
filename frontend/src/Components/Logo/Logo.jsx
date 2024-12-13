@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
+import LogoImage from "../../assets/Logo.png"; // Renamed the import to avoid conflicts
 
 function Logo() {
     return (
         <a href="/">
-            <img src="https://pnghq.com/wp-content/uploads/company-logo-png-png-download-40668-768x461.png" alt="Company logo" className='w-[20%] ' />
+            <img 
+                src={LogoImage} 
+                alt="Company logo" 
+                className="p-2 h-16 md:h-20" 
+            />
         </a>
-    )
+    );
 }
 
-export default Logo
+export default Logo;

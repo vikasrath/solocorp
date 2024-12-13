@@ -18,20 +18,39 @@ function Sidebar({ togled, setTogled }) {
         setSelect(navLink.title);
     };
 
+    const handleBack = () => {
+        setSelect("");
+    }
+
     return (
-        <div 
-            className={`fixed top-0 left-0 h-full w-[70%] bg-white z-20 shadow-lg transition-transform duration-1000 ease-in-out ${togled ? "translate-x-0" : "-translate-x-full"}`}
+        <div
+            className={`fixed top-0 left-0 h-full w-full max-w-[25rem] bg-white z-20 shadow-lg transition-transform duration-1000 ease-in-out ${togled ? "translate-x-0" : "-translate-x-full"}`}
             style={{ willChange: 'transform' }}
         >
-            <div className='flex justify-between items-center px-5 md:px-10 py-4 border-b'>
-                <Logo />
+            <div className='flex justify-between items-center px-4 pr-8 py-4 border-b'>
+                <div className='flex items-center'>
+                    {select &&
+                        <button
+                        onClick={handleBack}
+                        className="mr-5 p-2 pr-0 transition-all duration-500 ease-in-out transform scale-75"
+                        style={{
+                          animation: select
+                            ? "fade-in 2s forwards ease-in-out"
+                            : "fade-out 2s forwards ease-in-out",
+                        }}
+                      >
+                            <i className="fa-solid fa-arrow-left w-5 h-5 text-black" style={{ fontSize: '1.5rem' }}></i>
+                        </button>
+                    }
+                    <Logo />
+                </div>
                 <button onClick={handleToggle} className="text-black">
                     <i className='fa-solid fa-x w-5 h-5 text-black' style={{ fontSize: '1.5rem' }}></i>
                 </button>
             </div>
             <div className='flex h-full'>
-                <div className='flex flex-col bg-white text-black p-5 w-full md:w-[45%] lg:w-[35%]'>
-                    <div className='max-h-[85%] overflow-y-auto custom-scrollbar scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100'>
+                <div className='flex flex-col bg-white text-black p-5 w-full'>
+                    <div className='max-h-[calc(100%-10rem)] overflow-y-auto custom-scrollbar scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100'>
                         {navLinks.map((navLink, index) => (
                             <div
                                 className={`p-3 flex items-center font-semibold cursor-pointer mb-3 rounded-lg transition-all duration-300 ease-in-out

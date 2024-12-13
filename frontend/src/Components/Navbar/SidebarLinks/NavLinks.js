@@ -52,6 +52,18 @@ const navLinks = [
         title: "Registrations",
         subLinks: [
             {
+                title: "12A And 80G Registration",
+                link: "/12AAnd80GRegistration"
+            },
+            {
+                title: "12A Registration",
+                link: "/12ARegistration"
+            },
+            {
+                title: "80G Registration",
+                link: "/80GRegistration"
+            },
+            {
                 title: "Startup India",
                 link: "/StartupIndia"
             },
@@ -96,117 +108,58 @@ const navLinks = [
                 title: "Professional Tax Registration",
                 link: "/professionalTaxRegistration"
             },
-            
-        ]
-    },
-    {
-        title: "Trademark",
-        subLinks: [
             {
-                title: "Trademark Registration",
-                link: "/trademarkRegistration"
+                title: "RCMC Registration",
+                link: "/RCMCRegistration"
             },
             {
-                title: "Trademark Search",
-                link: "/trademarkSearch"
+                title: "TN RERA Registration For Agents",
+                link: "/TNRERARegistrationForAgents"
             },
             {
-                title: "Trademark Objection",
-                link: "/trademarkObjection"
+                title: "APEDA Registration",
+                link: "/APEDARegistration"
             },
             {
-                title: "Trademark Certificate",
-                link: "/trademarkCertificate"
+                title: "Barcode Registration",
+                link: "/barcodeRegistration"
             },
             {
-                title: "Tarademark Opposition",
-                link: "/tarademarkOpposition"
+                title: "BIS Registration",
+                link: "/BISRegistration"
             },
             {
-                title: "Trademark Hearing",
-                link: "/trademarkHearing"
+                title: "Certificate Of Incumbency",
+                link: "/certificateOfIncumbency"
             },
             {
-                title: "Trademark Rectification",
-                link: "/trademarkRectification"
+                title: "Darpan Registration",
+                link: "/darpanRegistration"
             },
             {
-                title: "TM Infringement Notice",
-                link: "/TMInfringementNotice"
+                title: "Digital Signature",
+                link: "/digitalSignature"
+            },
+            {
+                title: "Digital Signature-DGFT Version",
+                link: "/digitalSignatureDGFT"
+            },
+            {
+                title: "Drug License",
+                link: "/drugLicense"
+            },
+            {
+                title: "Udyam Registration",
+                link: "/udyamRegistration"
+            },
+            {
+                title: "FCRA Registration",
+                link: "/FCRARegistration"
+            },
+            {
+                title: "Fire License",
+                link: "/fireLicense"
             }
-            
-        ]
-    },
-    {
-        title: "Goods & Services Tax",
-        subLinks: [
-            {
-                title: "GST Amendment",
-                link: "/GSTAmendment"
-            },
-            {
-                title: "GST Annual Return Filing (GSTR-9)",
-                link: "/GSTAnnualReturnFiling"
-            },
-            {
-                title: "GST E-Invoicing Software",
-                link: "/GSTEInvoicingSoftware"
-            },
-            {
-                title: "GST LUT Form",
-                link: "/GSTLUTForm"
-            },
-            {
-                title: "GST Notice",
-                link: "/GSTNotice"
-            },
-            {
-                title: "GST Registration",
-                link: "/GSTRegistration"
-            },
-            {
-                title: "GST Registration For NRI",
-                link: "/GSTRegistrationForNRI"
-            },
-           
-        ]
-    },
-    {
-        title: "Income Tax",
-        subLinks: [
-            {
-                title: "Income Tax E-Filing",
-                link: "/incomeTaxEFiling"
-            },
-            {
-                title: "businessTaxFiling",
-                link: "/businessTaxFiling"
-            },
-            {
-                title: "ITR-1 Return Filing",
-                link: "/ITR1ReturnFiling"
-            },
-            {
-                title: "ITR-2 Return Filing",
-                link: "/ITR2ReturnFiling"
-            },
-            {
-                title: "ITR-3 Return Filing",
-                link: "/ITR3ReturnFiling"
-            },
-            {
-                title: "ITR-4 Return Filing",
-                link: "/ITR4ReturnFiling"
-            },
-            {
-                title: "ITR-5 Return Filing",
-                link: "/ITR5ReturnFiling"
-            },
-            {
-                title: "ITR-6 Return Filing",
-                link: "/ITR6ReturnFiling"
-            },
-            
         ]
     },
     {
@@ -244,7 +197,282 @@ const navLinks = [
                 title: "Director Change",
                 link: "/DirectorChange"
             },
-
+            {
+                title: "Remove Director",
+                link: "/removeDirector"
+            },
+            {
+                title: "ADT-1 Filing",
+                link: "/ADT1Filing"
+            },
+            {
+                title: "DPT-3 Filing",
+                link: "/DPT3Filing"
+                
+            },
+            {
+                title: "LLP Form 11 Filing",
+                link: "/LLPForm11Filing"
+            },
+            {
+                title: "Dormant Status Filing",
+                link: "/dormantStatusFiling"
+            },
+            {
+                title: "MOA Amendment",
+                link: "/MOAAmendment"
+            },
+            {
+                title: "AOA Amendment",
+                link: "/AOAAmendment"
+            },
+            {
+                title: "Authorised Capital Increase",
+                link: "/authorisedCapitalIncrease"
+            },
+            {
+                title: "Share Transfer",
+                link: "/shareTransfer"
+            },
+            {
+                title: "Demat Of Shares",
+                link: "/dematOfShares"
+            },
+            {
+                title: "Winding Up-LLP",
+                link: "/windingUpLLP"
+            },
+            {
+                title: "Winding Up-Company",
+                link: "/windingUpCompany"
+            }
+        ]
+    },
+    {
+        title: "Recovery of shares",
+        subLinks: [
+            {
+                title: "KYC updation",
+                link: "KYCUpdation"
+            },
+            {
+                title: "Issuance of duplicate share certificate ",
+                link: "IssuanceOfDuplicateShareCertificate "
+            },
+            {
+                title: "Transmission of Shares",
+                link: "TransmissionOfShares"
+            },
+            {
+                title: "Name Deletion",
+                link: "NameDeletion"
+            },
+            {
+                title: "Name Mismatch & Name Change",
+                link: "NameMismatch&NameChange"
+            },
+            {
+                title: "IEPF( investor education protection fund )",
+                link: "IEPF"
+            },
+            {
+                title: "Physical To Demat",
+                link: "PhysicalToDemat"
+            }
+        ]
+    },
+    {
+        title: "Trademark",
+        subLinks: [
+            {
+                title: "Trademark Registration",
+                link: "/trademarkRegistration"
+            },
+            {
+                title: "Trademark Search",
+                link: "/trademarkSearch"
+            },
+            {
+                title: "Trademark Objection",
+                link: "/trademarkObjection"
+            },
+            {
+                title: "Trademark Certificate",
+                link: "/trademarkCertificate"
+            },
+            {
+                title: "Tarademark Opposition",
+                link: "/tarademarkOpposition"
+            },
+            {
+                title: "Trademark Hearing",
+                link: "/trademarkHearing"
+            },
+            {
+                title: "Trademark Rectification",
+                link: "/trademarkRectification"
+            },
+            {
+                title: "TM Infringement Notice",
+                link: "/TMInfringementNotice"
+            },
+            {
+                title: "Trademark Renewal",
+                link: "/trademarkRenewal"
+            },
+            {
+                title: "Trademark Transfer",
+                link: "/trademarkTransfer"
+            },
+            {
+                title: "expedited TM Registration",
+                link: "/expeditedTMRegistration"
+                
+            },
+            {
+                title: "USA Trademark Registration",
+                link: "/USATrademarkRegistration"
+            },
+            {
+                title: "International Trademark",
+                link: "/internationalTrademark"
+            },
+            {
+                title: "Logo Designing",
+                link: "/logoDesigning"
+            },
+            {
+                title: "Design Registration",
+                link: "/designRegistration"
+            },
+            {
+                title: "Design Objection",
+                link: "/designObjection"
+            },
+            {
+                title: "Copyright Registration",
+                link: "/copyrightRegistration"
+            },
+            {
+                title: "Copyright Objection",
+                link: "/copyrightObjection"
+            },
+            {
+                title: "Patent Registration",
+                link: "/patentRegistration"
+            }
+            
+        ]
+    },
+    {
+        title: "Goods & Services Tax",
+        subLinks: [
+            {
+                title: "GST Registration",
+                link: "/GSTRegistration"
+            },
+            {
+                title: "GST Notice",
+                link: "/GSTNotice"
+            },
+            {
+                title: "GST Annual Return Filing (GSTR-9)",
+                link: "/GSTAnnualReturnFiling"
+            },
+            {
+                title: "GST Amendment",
+                link: "/GSTAmendment"
+            },
+            {
+                title: "GST E-Invoicing Software",
+                link: "/GSTEInvoicingSoftware"
+            },
+            {
+                title: "GST LUT Form",
+                link: "/GSTLUTForm"
+            },
+            {
+                title: "GST Registration For NRI",
+                link: "/GSTRegistrationForNRI"
+            },
+            {
+                title: "GST Return Filing By Accountant",
+                link: "/GSTReturnFilingByAccountant"
+            },
+            {
+                title: "GST Revocation",
+                link: "/GSTRevocation"
+            },
+            {
+                title: "Invoicing & GST Software",
+                link: "/invoicingAndGSTSoftware"
+            },
+            {
+                title: "GSTR-10",
+                link: "/GSTR10"
+                
+            },
+            {
+                title: "GST Software For Accountants",
+                link: "/GSTSoftwareForAccountants"
+            }
+        ]
+    },
+    {
+        title: "Income Tax",
+        subLinks: [
+            {
+                title: "Income Tax E-Filing",
+                link: "/incomeTaxEFiling"
+            },
+            {
+                title: "businessTaxFiling",
+                link: "/businessTaxFiling"
+            },
+            {
+                title: "ITR-1 Return Filing",
+                link: "/ITR1ReturnFiling"
+            },
+            {
+                title: "ITR-2 Return Filing",
+                link: "/ITR2ReturnFiling"
+            },
+            {
+                title: "ITR-3 Return Filing",
+                link: "/ITR3ReturnFiling"
+            },
+            {
+                title: "ITR-4 Return Filing",
+                link: "/ITR4ReturnFiling"
+            },
+            {
+                title: "ITR-5 Return Filing",
+                link: "/ITR5ReturnFiling"
+            },
+            {
+                title: "ITR-6 Return Filing",
+                link: "/ITR6ReturnFiling"
+            },
+            {
+                title: "ITR-7 Return Filing",
+                link: "/ITR7ReturnFiling"
+            },
+            {
+                title: "15CA-15CB Filing",
+                link: "/15CATo15CBFiling"
+            },
+            {
+                title: "TAN Registration",
+                link: "/TANRegistration"
+            },
+            {
+                title: "TDS Return Filing",
+                link: "/TDSReturnFiling"
+            },
+            {
+                title: "Income Tax Notice",
+                link: "/incomeTaxNotice"
+            }
         ]
     },
     {
@@ -273,8 +501,32 @@ const navLinks = [
             {
                 title: "HR & Payroll",
                 link: "/HRAndPayroll"
+            },
+            {
+                title: "PF Return Filing",
+                link: "/PFReturnFiling"
+            },
+            {
+                title: "ESI Return Filing",
+                link: "/ESIReturnFiling"
+            },
+            {
+                title: "Prfessional Tax Return Filing",
+                link: "/prfessionalTaxReturnFiling"
+            },
+            {
+                title: "Partnership Compliances",
+                link: "/partnershipCompliances"
+            },
+            {
+                title: "Proprietorship Compliances",
+                link: "/proprietorshipCompliances"
+                
+            },
+            {
+                title: "Book Keeping",
+                link: "/bookKeeping"
             }
-            
         ]
     },
 ]
