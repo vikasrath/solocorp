@@ -45,7 +45,7 @@ function Services() {
   return (
     <div className='w-full bg-gray-100 py-16'>
       {/* Section heading */}
-      <h1 className='text-center text-4xl font-bold text-gray-800 mb-12'>
+      <h1 className='text-center text-2xl font-bold text-gray-800 mb-12'>
         Our Professional Services for Every Requirement
       </h1>
 

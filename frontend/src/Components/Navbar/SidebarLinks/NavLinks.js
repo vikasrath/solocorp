@@ -376,7 +376,7 @@ const navLinks = [
                 link: "/GSTNotice"
             },
             {
-                title: "GST Annual Return Filing (GSTR-9)",
+                title: "GST Annual Return Filing",
                 link: "/GSTAnnualReturnFiling"
             },
             {
