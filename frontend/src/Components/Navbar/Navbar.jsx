@@ -25,7 +25,7 @@ function Navbar() {
                         </div>
                         <div className='flex items-center justify-center sm:mr-3 md:mr-5'>
                             <button onClick={handelClick}>
-                                <i className='fa-solid fa-bars w-10 h-8 mt-1 text-white' style={{ fontSize: '2rem' }}></i>
+                                <i className='fa-solid fa-bars w-10 h-8 mt-1 text-gray-400' style={{ fontSize: '2rem' }}></i>
                             </button>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ function Navbar() {
                         </a>
 
 
-                        <nav className="flex   justify-center items-center space-x-1 mx-14">
+                        <nav className="flex   justify-center items-center space-x-1 mx-14 lg:mx-0 xl:mx-14">
                             {navLinks.map((item) => (
                                 <div className="relative group" key={item}>
                                     <Link className="mr-5 hover:text-blue-600  font-semibold  cursor-pointer">
