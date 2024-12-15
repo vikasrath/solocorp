@@ -72,10 +72,6 @@ const navLinks = [
                 link: "/tradeLicense"
             },
             {
-                title: "FSSAI Registeration",
-                link: "/FSSAIRegisteration"
-            },
-            {
                 title: "FSSAI License",
                 link: "/FSSAILicense"
             },
