@@ -40,8 +40,7 @@ function Navbar() {
                             <Logo />
                         </a>
 
-
-                        <nav className="flex   justify-center items-center space-x-1 mx-14 lg:mx-0 xl:mx-14">
+                        <nav className="flex justify-center items-center space-x-1 mx-14 lg:mx-0 xl:mx-14">
                             {navLinks.map((item) => (
                                 <div className="relative group" key={item}>
                                     <Link className="mr-5 hover:text-blue-600  font-semibold  cursor-pointer">
