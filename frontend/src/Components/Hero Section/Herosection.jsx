@@ -18,17 +18,16 @@ function Herosection() {
 
   const headings = ["Willing to Trade", "Are You Looking For Startup Consultation?", "Want to Register Your Private Limited Company ?", "Worried About Your Company Non-Compliance?"]
 
+
+  
+
   useEffect(() => {
+    headingAnimation(headingRef, headings[currentHeadingIndex]);
     const interval = setInterval(() => {
       setCurrentHeadingIndex((prevIndex) => (prevIndex + 1) % headings.length);
-    }, 5000);
-    return () => clearInterval(interval); 
-  }, []);
-
-  useEffect(() => {
-    headingAnimation(headingRef)
-  }, [currentHeadingIndex])
-
+    }, 5000); 
+    return () => clearInterval(interval);
+  }, [currentHeadingIndex]);
   const topSearches = [
     "Private Limited Company Registration",
     "Trademark Registration",
@@ -107,6 +106,7 @@ function Herosection() {
             {/* Main Section */}
             <div className="text-center mt-10 mb-8">
               <h1
+              key={currentHeadingIndex}
                 ref={headingRef}
                 className=" text-xl md:text-3xl font-bold drop-shadow-md mt-12 md:mt-0 transition-opacity duration-500"
               >
