@@ -30,7 +30,7 @@ function DynamicPage() {
   return (
     <div className="bg-gray-50 text-gray-800">
       {/* Page Content */}
-      <div className="container mx-auto px-6 py-10 md:py-20">
+      <div className="container mx-auto px-3 py-5 md:py-10">
         <DynamicRender sections={pageSections} pageTitle={pageTitle} />
       </div>
     </div>
