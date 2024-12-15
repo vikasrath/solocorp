@@ -21,9 +21,9 @@ function Herosection() {
         "Startup India Registration",
         "MSME Registration",
         "ISO 9001:2015",
-        "Annual Filings of Companies",
         "Close Company",
         "DIN KYC",
+        "Annual Filings of Companies",
         "Resignation of Director",
         "Trademark Objection",
     ]
@@ -116,11 +116,11 @@ function Herosection() {
                   <h3 className="text-2xl font-semibold text-gray-800 mb-6">
                     Popular Searches:
                   </h3>
-                  <div className="flex flex-wrap w-[80%] justify-center items-center gap-4 mx-auto">
+                  <div className="flex flex-wrap  w-full lg:w-[80%] justify-center items-center gap-4 mx-auto">
                     {topSearches.map((item, index) => (
                       <span
                         key={index}
-                        className="bg-white text-gray-700 px-4 py-2 rounded-full shadow-md text-sm cursor-pointer hover:bg-blue-100 hover:text-blue-700 transition-all duration-300"
+                        className="bg-white text-gray-700 px-2 lg:px-4 py-2 rounded-full shadow-md text-sm cursor-pointer hover:bg-blue-100 hover:text-blue-700 transition-all duration-300"
                       >
                         {item}
                       </span>
