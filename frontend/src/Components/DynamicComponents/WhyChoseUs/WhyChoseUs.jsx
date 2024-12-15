@@ -19,9 +19,6 @@ function WhyChooseUs({ content }) {
       )}
       {content.steps && content.steps.length > 0 && (
         <div>
-          <h3 className="text-xl font-medium text-gray-800 dark:text-gray-200 mb-4">
-            Steps to Apply:
-          </h3>
           <ul className="space-y-4">
             {content.steps.map((step, index) => (
               <li

@@ -2,7 +2,6 @@
 
 // "RCMCRegistration": {},
 // "TNRERARegistrationForAgents": {},
-// "12AAnd80GRegistration": {},
 // "12ARegistration": {},
 // "80GRegistration": {},
 // "APEDARegistration": {},
