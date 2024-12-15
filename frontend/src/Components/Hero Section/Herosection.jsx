@@ -108,7 +108,7 @@ function Herosection() {
             <div className="text-center mt-10 mb-8">
               <h1
                 ref={headingRef}
-                className="text-3xl font-bold drop-shadow-md mt-12 md:mt-0 transition-opacity duration-500"
+                className=" text-xl md:text-3xl font-bold drop-shadow-md mt-12 md:mt-0 transition-opacity duration-500"
               >
                 {headings[currentHeadingIndex]}
               </h1>
