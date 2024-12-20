@@ -5,9 +5,10 @@ function Common({ content }) {
         <div className="common-container">
             {/* Heading */}
             {content && content.heading && (
-                <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-6">
-                    {content.heading}
-                </h2>
+                <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 border-l-4 border-blue-600 dark:border-gray-200 pl-4">
+                {content.heading}
+            </h2>
+            
             )}
 
             {/* Paragraphs */}

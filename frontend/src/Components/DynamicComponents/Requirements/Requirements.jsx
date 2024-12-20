@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 
 function Requirements({ content }) {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <div className="space-y-6 mb-8">
       <div className="max-w-5xl mx-auto px-0 sm:px-6 lg:px-8">
@@ -11,32 +17,54 @@ function Requirements({ content }) {
         </h2>
 
         {/* Overview */}
-        <p className="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed text-justify sm:text-center md:text-lg">
-          {content.overview}
-        </p>
+        {content.overview && (
+          <p className="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed text-justify sm:text-center md:text-lg">
+            {content.overview}
+          </p>
+        )}
 
-        {/* Items List with Icons */}
-        <ul className="space-y-4 mt-6">
-          {content.items.map((item, index) => (
-            <li
-              key={index}
-              className="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4 p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-shadow duration-300"
-            >
-              <FaCheckCircle
-                className="text-green-600 dark:text-green-400 shrink-0"
-                size={28}
-              />
-              <div className="flex-1">
-                <h3 className="text-lg md:text-xl font-semibold text-gray-800 dark:text-gray-100">
-                  {item.title}
-                </h3>
-                <p className="text-gray-700 dark:text-gray-300 mt-1 md:mt-2">
-                  {item.description}
-                </p>
+        {/* Items List with Accordion */}
+        {content.items && (
+          <div className="space-y-4 mt-6">
+            {content.items.map((item, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-start p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm"
+                onClick={() => toggleAccordion(index)}
+              >
+                <div
+                  className="flex items-center cursor-pointer"
+                  
+                >
+                  <FaCheckCircle
+                    className="text-green-600 dark:text-green-400 mr-4"
+                    size={28}
+                  />
+                  <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-100">
+                    {item.title}
+                  </h3>
+                </div>
+
+                {/* Accordion Content */}
+                {openIndex === index && (
+                  <div className="mt-2">
+                    {Array.isArray(item.description) ? (
+                      <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
+                        {item.description.map((desc, idx) => (
+                          <li key={idx}>{desc}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="text-gray-700 dark:text-gray-300">
+                        {item.description}
+                      </p>
+                    )}
+                  </div>
+                )}
               </div>
-            </li>
-          ))}
-        </ul>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
