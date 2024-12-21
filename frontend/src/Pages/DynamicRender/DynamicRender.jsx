@@ -22,6 +22,7 @@ import Common from "../../Components/DynamicComponents/Common/Common";
 import Penalties from "../../Components/DynamicComponents/Penalties/Penalties";
 import WhyChooseUs from "../../Components/DynamicComponents/WhyChoseUs/WhyChoseUs";
 import Guidelines from "../../Components/DynamicComponents/Guidelines/Guidelines";
+import DynamicTable from "../../Components/DynamicComponents/Table/DynamicTable";
 
 const DynamicRender = ({ sections, pageTitle }) => {
     return (
@@ -45,6 +46,8 @@ const DynamicRender = ({ sections, pageTitle }) => {
                             return <Overview key={index} content={section.content} />;
                         case "intro":
                             return <Intro key={index} content={section.content} />;
+                            case "dynamicTable":
+                            return <DynamicTable key={index} content={section.content} />;
                         case "requirements":
                             return <Requirements key={index} content={section.content} />;
                         case "law":
