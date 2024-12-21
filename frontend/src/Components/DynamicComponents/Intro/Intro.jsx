@@ -7,7 +7,7 @@ const Intro = ({ content }) => {
         <div>
             {/* Heading */}
             {heading && (
-                <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6 border-b-2 border-gray-400 pb-2">
+                <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6 border-b-2 border-blue-500 pb-2">
                     {heading}
                 </h1>
             )}

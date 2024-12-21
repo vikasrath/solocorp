@@ -522,10 +522,6 @@ const navLinks = [
                 title: "Proprietorship Compliances",
                 link: "/proprietorshipCompliances"
                 
-            },
-            {
-                title: "Book Keeping",
-                link: "/bookKeeping"
             }
         ]
     },
