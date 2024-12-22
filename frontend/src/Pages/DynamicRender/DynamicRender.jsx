@@ -19,6 +19,7 @@ import PartiesInvolved from "../../Components/DynamicComponents/PartiesInvolved/
 import ReasonsForRegistration from "../../Components/DynamicComponents/ReasonForRegisteration/ReasonForRegisteration";
 import Activities from "../../Components/DynamicComponents/Activities/Activities";
 import Common from "../../Components/DynamicComponents/Common/Common";
+import Common2 from "../../Components/DynamicComponents/Common/Common2";
 import Penalties from "../../Components/DynamicComponents/Penalties/Penalties";
 import WhyChooseUs from "../../Components/DynamicComponents/WhyChoseUs/WhyChoseUs";
 import Guidelines from "../../Components/DynamicComponents/Guidelines/Guidelines";
@@ -95,6 +96,8 @@ const DynamicRender = ({ sections, pageTitle }) => {
                             return <Common key={index} content={section.content} />;
                         case "guidelines":
                             return <Guidelines key={index} content={section.content} />;
+                            case "common2":
+                            return <Common2 key={index} content={section.content} />;
                         default:
                             return null;
                     }

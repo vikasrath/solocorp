@@ -4,6 +4,7 @@ import Logo from '../Logo/Logo';
 import HoverBox from './HoverBox/Hoverbox';
 import { Link, NavLink } from 'react-router-dom';
 import navLinks from './SidebarLinks/NavLinks';
+import { FaBars } from 'react-icons/fa';
 
 function Navbar() {
     const [togle, setTogle] = useState(false);
@@ -25,7 +26,7 @@ function Navbar() {
                         </div>
                         <div className='flex items-center justify-center sm:mr-3 md:mr-5'>
                             <button onClick={handelClick}>
-                                <i className='fa-solid fa-bars w-10 h-8 mt-1 text-gray-400' style={{ fontSize: '2rem' }}></i>
+                                <FaBars className='w-10 h-8 mt-1 text-gray-400' style={{ fontSize: '2rem' }} />
                             </button>
                         </div>
                     </div>

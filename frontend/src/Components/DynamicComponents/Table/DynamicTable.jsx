@@ -5,7 +5,7 @@ function DynamicTable({ content }) {
         <div className="dynamic-table-container">
             {/* Heading */}
             {content && content.heading && (
-                <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-6">
+                <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-6 border-l-4 pl-6 border-blue-600">
                     {content.heading}
                 </h2>
             )}

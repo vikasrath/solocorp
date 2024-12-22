@@ -7,7 +7,7 @@ const Types = ({ content }) => {
         <div className="space-y-6">
             {/* Heading */}
             {heading && (
-                <h1 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
+                <h1 className="text-2xl font-semibold text-gray-900 border-l-4 border-blue-600 pl-6 dark:text-gray-100">
                     {heading}
                 </h1>
             )}
