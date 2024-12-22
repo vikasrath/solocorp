@@ -34,6 +34,19 @@ function Registration({ content }) {
                     ))}
                 </ul>
             )}
+
+            {content.steps && (
+                <div className="space-y-6 mt-6">
+                    {content.steps.map((step, index) => (
+                        <div key={index} className="space-y-2">
+                            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                                {step.title}
+                            </h3>
+                            <p className="text-lg text-gray-700 dark:text-gray-300">{step.description}</p>
+                        </div>
+                    ))}
+                </div>
+            )}
         </div>
     );
 }

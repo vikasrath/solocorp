@@ -392,8 +392,8 @@ const navLinks = [
                 link: "/GSTLUTForm"
             },
             {
-                title: "GST Registration For NRI",
-                link: "/GSTRegistrationForNRI"
+                title: "GST Registration for Foreigners",
+                link: "/GSTRegistrationforForeigners"
             },
             {
                 title: "GST Return Filing By Accountant",
@@ -404,17 +404,13 @@ const navLinks = [
                 link: "/GSTRevocation"
             },
             {
-                title: "Invoicing & GST Software",
-                link: "/invoicingAndGSTSoftware"
-            },
-            {
                 title: "GSTR-10",
                 link: "/GSTR10"
                 
             },
             {
-                title: "GST Software For Accountants",
-                link: "/GSTSoftwareForAccountants"
+                title: "GST Invoicing & FilingSoftware",
+                link: "/GSTInvoicing&FilingSoftware"
             }
         ]
     },
@@ -523,10 +519,7 @@ const navLinks = [
                 link: "/proprietorshipCompliances"
                 
             },
-            {
-                title: "Book Keeping",
-                link: "/bookKeeping"
-            }
+            
         ]
     },
 ]
