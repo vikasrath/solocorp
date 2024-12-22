@@ -5,7 +5,7 @@ function Common2({ content }) {
     <div className="common-container p-2 mx-auto space-y-8">
       {/* Heading */}
       {content && content.heading && (
-        <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4 pl-4 border-l-4 border-teal-500 dark:border-teal-300">
+        <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4 pl-4 border-l-4 border-blue-500 dark:border-blue-300">
           {content.heading}
         </h2>
       )}
@@ -27,7 +27,7 @@ function Common2({ content }) {
           {content.points.map((point, index) => (
             <div
               key={index}
-              className="cursor-pointer bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 hover:bg-teal-50"
+              className="cursor-pointer bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 hover:bg-blue-50"
             >
               {/* Title for the Point */}
               {point.title && (
@@ -53,7 +53,7 @@ function Common2({ content }) {
 
       {/* Standard Description Handling */}
       {content && content.description && content.description.length > 0 && (
-        <div className="bg-teal-100 p-6 rounded-xl shadow-md">
+        <div className="bg-blue-100 p-6 rounded-xl shadow-md">
           <ul className="list-disc pl-6 space-y-4">
             {content.description.map((point, index) => (
               <li key={index} className="text-lg text-gray-800 dark:text-gray-400">
