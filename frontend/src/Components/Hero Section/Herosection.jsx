@@ -1,15 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
 import BG from "../../assets/heroBG.jpeg";
 import Navbar from '../Navbar/Navbar';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import images from '../../indexImages/indexImages';
 import { usePageData } from '../../context/pageData';
 import { headingAnimation } from '../../GsapAnimation/GsapAnimation';
+import suggetionList from '../Navbar/SidebarLinks/SuggetionList';
+
 
 function Herosection() {
   const [heroImg, setHeroImg] = useState(null);
   const [heroContent, setHeroContent] = useState(null);
   const [currentHeadingIndex, setCurrentHeadingIndex] = useState(0);
+  const [showSuggetion, setshowSuggetion] = useState(null)
+  const [serchingName, setserchingName] = useState(null)
 
   const { pageData } = usePageData()
   const headingRef = useRef()
@@ -18,14 +22,24 @@ function Herosection() {
 
   const headings = ["Willing to Trade", "Are You Looking For Startup Consultation?", "Want to Register Your Private Limited Company ?", "Worried About Your Company Non-Compliance?"]
 
-
   
+  useEffect(() => {
+    if (!serchingName || serchingName.trim() === "") {
+      setshowSuggetion(null); 
+    } else {
+      const filteredSuggestions = suggetionList.filter((value) =>
+        value.title.toLowerCase().includes(serchingName.toLowerCase())
+      );
+      setshowSuggetion(filteredSuggestions);
+    }
+  }, [serchingName]);
+
 
   useEffect(() => {
     headingAnimation(headingRef, headings[currentHeadingIndex]);
     const interval = setInterval(() => {
       setCurrentHeadingIndex((prevIndex) => (prevIndex + 1) % headings.length);
-    }, 5000); 
+    }, 5000);
     return () => clearInterval(interval);
   }, [currentHeadingIndex]);
   const topSearches = [
@@ -55,6 +69,8 @@ function Herosection() {
       }
     }
   }, [urlName, pageData]);
+
+
 
   return (
     <div className="w-full">
@@ -106,7 +122,7 @@ function Herosection() {
             {/* Main Section */}
             <div className="text-center mt-10 mb-8">
               <h1
-              key={currentHeadingIndex}
+                key={currentHeadingIndex}
                 ref={headingRef}
                 className=" text-xl md:text-3xl font-bold drop-shadow-md mt-12 md:mt-0 transition-opacity duration-500"
               >
@@ -123,13 +139,31 @@ function Herosection() {
             {/* Search Bar */}
             <div className="relative w-full max-w-md mb-10">
               <input
+                value={serchingName}
                 type="text"
                 placeholder="Search for Startup Services..."
                 className="w-full p-4 pl-6 rounded-full border-2 border-gray-300 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                onChange={(e) => setserchingName(e.target.value)}
               />
               <button className="absolute right-4 top-3 text-blue-500 hover:text-blue-700 text-2xl transition-transform duration-300 transform hover:scale-110">
                 🔍
               </button>
+              {showSuggetion?.length > 0 && (
+                <ul className="absolute z-10 w-full bg-white border border-gray-200 rounded-lg shadow-lg mt-2 max-h-60 overflow-auto">
+                  {showSuggetion.map((item, index) => (
+                    <li className='px-4 py-2 hover:bg-blue-100 hover:text-blue-700 cursor-pointer transition-colors duration-200"'>
+                      <Link
+                        to={item.link}
+                        key={index}
+                        value={item}
+                        className=""
+                      >
+                        {item.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
 
             {/* Top Searches */}
