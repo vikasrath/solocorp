@@ -5,7 +5,7 @@ function StepsToRegister({ content }) {
         <div className=" space-y-6">
             {/* Heading */}
             {content && content.heading && (
-                <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4 border-l-4 border-blue-600 pl-4">
                     {content.heading}
                 </h2>
             )}

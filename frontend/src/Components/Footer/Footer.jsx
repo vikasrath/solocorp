@@ -55,7 +55,7 @@ const Footer = () => {
            <Logo/>
             <div>
               <p className="text-lg font-semibold hover:text-gray-300 transition-colors duration-300 cursor-pointer">
-                Nandaguri Verifocus Legal LLP
+                Solocorp
               </p>
               <p className="text-sm text-gray-400 hover:text-gray-300 transition-colors duration-300 cursor-pointer">
                 Simplifying Business Processes
@@ -73,8 +73,8 @@ const Footer = () => {
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <FooterSection
-            title="About Nandaguri Verifocus Legal LLP"
-            items="At Nandaguri Verifocus Legal LLP, we simplify business processes with expert solutions in company incorporation, tax filing, trademark registration, and more."
+            title="About Solocorp"
+            items="At Solocorp, we simplify business processes with expert solutions in company incorporation, tax filing, trademark registration, and more."
           />
           <FooterSection title="Services" items={services} />
           <FooterSection title="Quick Links" items={quickLinks} />
@@ -102,7 +102,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="border-t border-gray-700 mt-8 pt-4 text-center relative">
-          <p className="text-sm text-gray-400">&copy; 2024 Nandaguri Verifocus Legal LLP. All Rights Reserved.</p>
+          <p className="text-sm text-gray-400">&copy; 2024 Solocorp. All Rights Reserved.</p>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="absolute right-4 bottom-10 sm:bottom-5 bg-gray-600 hover:bg-gray-500 text-white rounded-full p-2 transition-colors duration-300"
