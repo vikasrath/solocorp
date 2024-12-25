@@ -9,6 +9,15 @@ function ReasonsForRegistration({ content }) {
                     {content.heading}
                 </h2>
             )}
+            {content.description && (
+                <div className="space-y-4">
+                    {content.description.map((desc, index) => (
+                        <p key={index} className="text-lg text-gray-800 dark:text-gray-300">
+                            {desc}
+                        </p>
+                    ))}
+                </div>
+            )}
 
             {/* Reasons List */}
             {content?.reasons?.length > 0 && (
