@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Intro = ({ content }) => {
-    const { heading, description, keyCharacteristics } = content;
+    const { heading, description, keyCharacteristics, points } = content;
 
     return (
         <div>
@@ -24,11 +24,10 @@ const Intro = ({ content }) => {
             )}
 
             {/* Key Characteristics */}
-            {keyCharacteristics && keyCharacteristics.length > 0 && (
+            {(keyCharacteristics || points) && (
                 <div className="mt-8 space-y-4">
-                    <h2 className="text-xl font-semibold text-blue-600 dark:text-blue-400">Key Characteristics</h2>
                     <ul className="list-disc pl-5 space-y-3">
-                        {keyCharacteristics.map((item, index) => (
+                        {(keyCharacteristics || points).map((item, index) => (
                             <li key={index} className="text-gray-700 dark:text-gray-300">
                                 <strong>{item.title}:</strong> {item.description}
                             </li>
