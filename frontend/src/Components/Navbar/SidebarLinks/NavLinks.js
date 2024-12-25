@@ -102,7 +102,7 @@ const navLinks = [
             {
                 title: "ESI Registration",
                 link: "/ESIRegistration"
-                
+
             },
             {
                 title: "Professional Tax Registration",
@@ -208,7 +208,7 @@ const navLinks = [
             {
                 title: "DPT-3 Filing",
                 link: "/DPT3Filing"
-                
+
             },
             {
                 title: "LLP Form 11 Filing",
@@ -327,7 +327,7 @@ const navLinks = [
             {
                 title: "expedited TM Registration",
                 link: "/expeditedTMRegistration"
-                
+
             },
             {
                 title: "USA Trademark Registration",
@@ -361,7 +361,7 @@ const navLinks = [
                 title: "Patent Registration",
                 link: "/patentRegistration"
             }
-            
+
         ]
     },
     {
@@ -406,7 +406,7 @@ const navLinks = [
             {
                 title: "GSTR-10",
                 link: "/GSTR10"
-                
+
             },
             {
                 title: "GST Invoicing & FilingSoftware",
@@ -517,9 +517,9 @@ const navLinks = [
             {
                 title: "Proprietorship Compliances",
                 link: "/proprietorshipCompliances"
-                
+
             },
-            
+
         ]
     },
 ]

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaAngleRight, FaChevronUp } from "react-icons/fa";
+import { FaAngleRight, FaChevronUp,FaPhoneAlt,FaEnvelope,FaMapMarkerAlt   } from "react-icons/fa";
 import Sidebar from "../Navbar/Sidebar/Sidebar";
 import Logo from "../Logo/Logo";
 
@@ -27,7 +27,7 @@ const FooterSection = ({ title, items }) => (
 const Footer = () => {
   const services = [
     { label: "Proprietorship", link: "/proprietorship" },
-    { label: "FSSAI Registration", link: "/FSSAIRegistration" },
+    { label: "FSSAI License", link: "/FSSAILicense" },
     { label: "Trademark Registration", link: "/trademarkRegistration" },
     { label: "GST Registration", link: "/GSTRegistration" },
     { label: "Income Tax E-Filing", link: "/incomeTaxEFiling" },
@@ -82,18 +82,18 @@ const Footer = () => {
             title="Contact Us"
             items={
               <>
-                <p className="text-sm mb-2 text-gray-400 hover:text-gray-300 transition-colors duration-300">
-                  <i className="fas fa-map-marker-alt mr-2"></i> S.C.O shop Near Tej Kaur Hospital, HDFC Bank Gidderbaha Circular Road Muktsar 152101 Punjab
+                <p className="text-sm mb-2 flex text-gray-400 hover:text-gray-300 transition-colors duration-300">
+                <FaMapMarkerAlt className="mr-2  text-4xl" /> S.C.O shop Near Tej Kaur Hospital, HDFC Bank Gidderbaha Circular Road Muktsar 152101 Punjab
 
                 </p>
-                <p className="text-sm mb-2 text-gray-400 hover:text-gray-300 transition-colors duration-300">
-                  <i className="fas fa-phone-alt mr-2"></i>  +918923777757
+                <p className="text-sm flex  mb-2 text-gray-400 hover:text-gray-300 transition-colors duration-300">
+                <FaPhoneAlt className="mr-2" />+918700024042
                 </p>
-                <p className="text-sm mb-2 text-gray-400 hover:text-gray-300 transition-colors duration-300">
-                  <i className="fas fa-phone-alt mr-2"></i>  +917999600059
+                <p className="text-sm flex mb-2 text-gray-400 hover:text-gray-300 transition-colors duration-300">
+                <FaPhoneAlt className="mr-2" /> +918700024042
                 </p>
-                <p className="text-sm text-gray-400 hover:text-gray-300 transition-colors duration-300">
-                  <i className="fas fa-envelope mr-2"></i> nandagurivflegal@gmail.com
+                <p className="text-sm  flex text-center items-center text-gray-400 hover:text-gray-300 transition-colors duration-300">
+                <FaEnvelope className="mr-2 text-gray-400" /> contactsolocorp@gmail.com
                 </p>
               </>
             }
