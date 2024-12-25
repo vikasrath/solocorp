@@ -10,12 +10,19 @@ function PostIncorporationFormalities({ content }) {
 
             {/* Overview */}
             {content.overview && (
-                <div className="text-gray-800 dark:text-gray-300 leading-relaxed px-2">
-                    {content.overview.map((line, index) => (
-                        <p key={index}>{line}</p>
-                    ))}
-                </div>
+                Array.isArray(content.overview) ? (
+                    <div className="text-gray-800 dark:text-gray-300 leading-relaxed px-2">
+                        {content.overview.map((line, index) => (
+                            <p key={index}>{line}</p>
+                        ))}
+                    </div>
+                ) : (
+                    <p className="text-gray-800 dark:text-gray-300 leading-relaxed px-2">
+                        {content.overview}
+                    </p>
+                )
             )}
+
 
             {/* Steps */}
             {content.steps && (
