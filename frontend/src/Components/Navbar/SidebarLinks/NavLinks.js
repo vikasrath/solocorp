@@ -195,7 +195,7 @@ const navLinks = [
             },
             {
                 title: "Director Change",
-                link: "/DirectorChange"
+                link: "/directorChange"
             },
             {
                 title: "Remove Director",
