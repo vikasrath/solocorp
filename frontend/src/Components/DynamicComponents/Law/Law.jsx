@@ -6,7 +6,7 @@ const Law = ({ content }) => {
     return (
         <div className="space-y-8 bg-gradient-to-r from-blue-50 to-white p-6 rounded-lg">
             {/* Heading */}
-            <h1 className="text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-6 border-l-8 pl-6 border-blue-500">
+            <h1 className="text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-6 border-l-4 pl-6 border-blue-500">
                 {heading}
             </h1>
 

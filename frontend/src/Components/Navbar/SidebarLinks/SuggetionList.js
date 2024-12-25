@@ -183,7 +183,7 @@ const suggetionList = [
     },
     {
         title: "Director Change",
-        link: "/DirectorChange"
+        link: "/directorChange"
     },
     {
         title: "Remove Director",
