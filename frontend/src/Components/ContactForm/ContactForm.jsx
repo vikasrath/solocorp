@@ -10,52 +10,7 @@ const ContactForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const sendEmail = (params) => {
-   
-    const serviceid = "service_mzhwv9h"
-    const templateid = "template_xi6pq7f"
-    const publicid = "KC5Qork5L2fQfGYn5"
 
-
-    // EmailJS service integration
-    emailjs.send(
-        serviceid,
-        templateid,
-        params,
-        {
-          publicKey :publicid,
-          limitRate:{
-            throttle : 5000
-          } 
-        }
-         
-      )
-      .then(
-        (result) => {
-          console.log('Email sent successfully', result.text);
-          setResponseMessage('Your message has been sent successfully!');
-        },
-        (error) => {
-          console.log('Error sending email', error.text);
-          setResponseMessage('Sorry, something went wrong. Please try again.');
-        }
-      );
-  };
-
-  const handleSubmit = (e)=>{
-    e.preventDefault();
-
-    const templateParams = {
-      to_name:"solocorp",
-      from_name:formData.name,
-      reply_to : formData.email,
-      message: formData.message,
-    }
-
-    sendEmail(templateParams);
-
-
-}
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
