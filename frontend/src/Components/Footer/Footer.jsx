@@ -89,9 +89,7 @@ const Footer = () => {
                 <p className="text-sm flex  mb-2 text-gray-400 hover:text-gray-300 transition-colors duration-300">
                 <FaPhoneAlt className="mr-2" />+918700024042
                 </p>
-                <p className="text-sm flex mb-2 text-gray-400 hover:text-gray-300 transition-colors duration-300">
-                <FaPhoneAlt className="mr-2" /> +918700024042
-                </p>
+                
                 <p className="text-sm  flex text-center items-center text-gray-400 hover:text-gray-300 transition-colors duration-300">
                 <FaEnvelope className="mr-2 text-gray-400" /> contactsolocorp@gmail.com
                 </p>
