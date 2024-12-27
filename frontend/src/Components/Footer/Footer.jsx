@@ -83,7 +83,7 @@ const Footer = () => {
             items={
               <>
                 <p className="text-sm mb-2 flex text-gray-400 hover:text-gray-300 transition-colors duration-300">
-                <FaMapMarkerAlt className="mr-2  text-4xl" /> S.C.O shop Near Tej Kaur Hospital, HDFC Bank Gidderbaha Circular Road Muktsar 152101 Punjab
+                <FaMapMarkerAlt className="mr-2  text-2xl lg:text-4xl" /> S.C.O shop Near Tej Kaur Hospital, HDFC Bank Gidderbaha Circular Road Muktsar 152101 Punjab
 
                 </p>
                 <p className="text-sm flex  mb-2 text-gray-400 hover:text-gray-300 transition-colors duration-300">
