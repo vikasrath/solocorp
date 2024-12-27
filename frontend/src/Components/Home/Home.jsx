@@ -1,6 +1,7 @@
 import React from 'react';
 import Services from './Services/Services';
 import ContactForm from '../ContactForm/ContactForm';
+import GetinTouch from '../GetinTouch/GetinTouch';
 
 function Home() {
     return (
@@ -11,7 +12,7 @@ function Home() {
             </div>
 
             {/* Feedback and Contact Section */}
-            <ContactForm/>
+           <GetinTouch/>
         </>
     );
 }
