@@ -1,67 +1,90 @@
 import React from 'react';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import ContactForm from '../../Components/ContactForm/ContactForm';
+import image from "../../assets/corporate office.avif";
 
 const Contact = () => {
   return (
-    <div className="bg-gray-50 min-h-screen">
-      {/* Hero Section */}
-      <header className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('https://source.unsplash.com/1600x900/?corporate,office')" }}>
-        <div className="bg-black bg-opacity-50 w-full h-full flex items-center justify-center">
-          <h1 className="text-white text-5xl font-semibold">Contact Us</h1>
+    <section
+      className="relative bg-cover bg-center bg-no-repeat dark:bg-slate-800"
+      id="contact"
+      style={{
+        backgroundImage: `url(${image})`, // Replace with your image URL
+      }}
+    >
+      {/* Overlay with a smooth gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-60"></div>
+
+      {/* Content */}
+      <div className="relative mx-auto px-3 py-16 sm:px-8 lg:px-12 lg:py-28">
+        <div className="text-center mb-12">
+          <div className="mb-6 max-w-3xl mx-auto">
+            <p className="text-base font-semibold uppercase tracking-wide text-blue-400 mt-10">
+              Contact Us
+            </p>
+            <h2 className="font-heading mb-4 text-3xl sm:text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg">
+              Get in Touch
+            </h2>
+            <p className="mx-auto mt-4 max-w-3xl text-lg sm:text-xl text-gray-300">
+              We’re here to assist with any questions or support you need.
+            </p>
+          </div>
         </div>
-      </header>
 
-      {/* Contact Information and Form Section */}
-      <div className="container mx-auto py-16 px-6">
-        <div className="flex flex-col lg:flex-row gap-12">
-          {/* Contact Cards */}
-          <div className="w-full lg:w-1/3 space-y-6">
-            <div className="bg-white shadow-xl rounded-lg p-6 hover:shadow-2xl transition-all duration-300">
-              <div className="flex items-center space-x-4">
-                <FaMapMarkerAlt className="text-blue-600 text-3xl" />
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800">Address</h3>
-                  <p className="text-gray-600">
-                    S.C.O shop Near Tej Kaur Hospital, Gidderbaha Circular Road, Muktsar, Punjab 152101
-                  </p>
+        <div className="flex flex-col md:flex-row items-stretch justify-center bg-white bg-opacity-90 md:p-8 rounded-lg shadow-xl">
+          <div className="md:w-1/2 text-black mb-8 md:mb-0 p-5 md:p-0">
+            {/* Left Side - Contact Information */}
+            <p className="mt-3 mb-8 text-lg sm:text-xl">
+              Whether you have a question or need support, we’re always here to assist you.
+              Reach out through any of the methods below:
+            </p>
+            <ul className="space-y-10">
+              {/* Address */}
+              <li className="flex items-center space-x-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white shadow-md">
+                  <FaMapMarkerAlt size={24} />
                 </div>
-              </div>
-            </div>
-
-            <div className="bg-white shadow-xl rounded-lg p-6 hover:shadow-2xl transition-all duration-300">
-              <div className="flex items-center space-x-4">
-                <FaPhone className="text-blue-600 text-3xl" />
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800">Phone</h3>
-                  <p className="text-gray-600">
-                    <a href="tel:+918700024042" className="text-blue-500 hover:underline">+91 8700024042</a>
-                  </p>
+                  <h3 className="mb-2 text-xl font-semibold">Our Address</h3>
+                  <p className="text-gray-600">S.C.O shop Near Tej Kaur Hospital, HDFC Bank</p>
+                  <p className="text-gray-600">Gidderbaha Circular Road, Muktsar 152101, Punjab</p>
                 </div>
-              </div>
-            </div>
-
-            <div className="bg-white shadow-xl rounded-lg p-6 hover:shadow-2xl transition-all duration-300">
-              <div className="flex items-center space-x-4">
-                <FaEnvelope className="text-blue-600 text-3xl" />
+              </li>
+              {/* Contact */}
+              <li className="flex items-center space-x-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white shadow-md">
+                  <FaPhoneAlt size={24} />
+                </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800">Email</h3>
-                  <p className="text-gray-600">
-                    <a href="mailto:contactsolocorp@gmail.com" className="text-blue-500 hover:underline">contactsolocorp@gmail.com</a>
-                  </p>
+                  <h3 className="mb-2 text-xl font-semibold">Contact Us</h3>
+                  <p className="text-gray-600">Mobile: +91 8700024042</p>
+                  <p className="text-gray-600">Email: contactsolocorp@gmail.com</p>
                 </div>
-              </div>
-            </div>
+              </li>
+              {/* Working Hours */}
+              <li className="flex items-center space-x-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white shadow-md">
+                  <FaEnvelope size={24} />
+                </div>
+                <div>
+                  <h3 className="mb-2 text-xl font-semibold">Working Hours</h3>
+                  <p className="text-gray-600">Monday - Friday: 08:00 AM - 05:00 PM</p>
+                  <p className="text-gray-600">Saturday & Sunday: 08:00 AM - 12:00 PM</p>
+                </div>
+              </li>
+            </ul>
           </div>
 
-          {/* Contact Form */}
-          <div className="w-full lg:w-2/3 bg-white shadow-lg p-8 rounded-lg">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Send Us a Message</h3>
+          <div className="md:w-1/2 bg-white p-5 md:p-10 shadow-xl rounded-lg">
+            {/* Right Side - Contact Form */}
+            <h2 className="mb-6 text-xl md:text-2xl sm:text-3xl font-semibold text-gray-800">
+              Ready to Get Started?
+            </h2>
             <ContactForm />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

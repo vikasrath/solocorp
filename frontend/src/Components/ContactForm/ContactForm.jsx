@@ -34,31 +34,96 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <form onSubmit={handleSubmit} className="bg-white shadow-md rounded-lg p-6 space-y-4 w-full max-w-md">
-        <h1 className="text-xl font-semibold text-center">Contact Us</h1>
-        {['name', 'email', 'phone'].map((field) => (
-          <input
-            key={field}
-            type={field === 'email' ? 'email' : 'text'}
-            name={field}
-            placeholder={field.charAt(0).toUpperCase() + field.slice(1)}
-            value={formData[field]}
-            onChange={handleChange}
-            className="w-full border rounded-md p-2"
-            required
-          />
-        ))}
-        <textarea
-          name="description"
-          placeholder="Description"
-          value={formData.description}
-          onChange={handleChange}
-          className="w-full border rounded-md p-2"
-          rows="4"
-          required
-        />
-        <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded-md">Submit</button>
+    <div className="flex justify-center items-center ">
+      <form
+        id="contactForm"
+        onSubmit={handleSubmit}
+        className="w-full space-y-4"
+      >
+        <h1 className="text-2xl font-semibold text-center text-gray-800 mb-4">Contact Us</h1>
+
+        <div className="space-y-4">
+          {/* Name Input */}
+          <div>
+            <label htmlFor="name" className="block text-sm font-semibold text-gray-700">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autoComplete="given-name"
+              placeholder="Your name"
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+
+          {/* Email Input */}
+          <div>
+            <label htmlFor="email" className="block text-sm font-semibold text-gray-700">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autoComplete="email"
+              placeholder="Your email address"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+
+          {/* Phone Input */}
+          <div>
+            <label htmlFor="phone" className="block text-sm font-semibold text-gray-700">
+              Phone Number
+            </label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Your phone number"
+              value={formData.phone}
+              onChange={handleChange}
+              className="w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+
+          {/* Message Textarea */}
+          <div>
+            <label htmlFor="description" className="block text-sm font-semibold text-gray-700">
+              Message
+            </label>
+            <textarea
+              id="description"
+              name="description"
+              cols="30"
+              rows="4"
+              placeholder="Write your message..."
+              value={formData.description}
+              onChange={handleChange}
+              className="w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            ></textarea>
+          </div>
+        </div>
+
+        {/* Submit Button */}
+        <div className="text-center">
+          <button
+            type="submit"
+            className="w-full bg-blue-600 text-white py-2 px-4 font-medium rounded-md shadow-sm hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+          >
+            Send Message
+          </button>
+        </div>
       </form>
     </div>
   );
