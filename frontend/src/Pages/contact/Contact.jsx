@@ -13,7 +13,7 @@ const Contact = () => {
       }}
     >
       {/* Overlay with a smooth gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-60"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-80"></div>
 
       {/* Content */}
       <div className="relative mx-auto px-3 py-16 sm:px-8 lg:px-12 lg:py-28">
