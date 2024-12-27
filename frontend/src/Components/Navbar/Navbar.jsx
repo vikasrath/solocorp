@@ -36,7 +36,7 @@ function Navbar() {
 
             <div className="hidden lg:block">
                 <header className="bg-gray-100 text-gray-900 border-b-4  body-font">
-                    <div className="container mx-auto flex flex-wrap  justify-between p-2 items-center">
+                    <div className="container mx-auto flex   justify-between p-2 items-center">
                         <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
                             <Logo />
                         </a>
@@ -44,7 +44,7 @@ function Navbar() {
                         <nav className="flex justify-center items-center space-x-1 mx-14 lg:mx-0 xl:mx-14">
                             {navLinks.map((item) => (
                                 <div className="relative group" key={item}>
-                                    <Link className="mr-5 hover:text-blue-600  font-semibold  cursor-pointer">
+                                    <Link className="mr-2.5 xl:mr-5 hover:text-blue-600  font-semibold  cursor-pointer">
                                         {item.title}
                                     </Link>
                                     <div className={`z-20  absolute  bottom-0 top-10  transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ${item.title === "Registrations" ? "w-[800px] -right-96" : "w-[600px] -right-64"}`}>
